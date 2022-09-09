@@ -1,0 +1,7 @@
+flask
+flask-sqlalchemy
+mysqlclient
+flask-script
+flask_debugtoolbar
+apscheduler
+Flask-APScheduler
