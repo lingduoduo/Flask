@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 class Student(object):
-    def __init__(self,name,score):
+    def __init__(self, name, score):
         self.name = name
         self.__score = score
 
@@ -10,11 +10,12 @@ class Student(object):
         return self.__score
 
     @score.setter
-    def score(self,score):
+    def score(self, score):
         if score < 0 or score > 100:
-            raise  ValueError( "invalid score" )
+            raise ValueError( "invalid score" )
         self.__score = score
 
-s = Student( "imooc","100" )
-s.score = 101
+
+s = Student( "imooc", "100" )
+s.score = 80
 print( s.score )
