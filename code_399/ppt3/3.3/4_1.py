@@ -12,10 +12,10 @@ class Student(object):
     @score.setter
     def score(self, score):
         if score < 0 or score > 100:
-            raise ValueError( "invalid score" )
+            raise ValueError("invalid score")
         self.__score = score
 
 
-s = Student( "imooc", "100" )
+s = Student("imooc", "100")
 s.score = 80
-print( s.score )
+print(s.score)
