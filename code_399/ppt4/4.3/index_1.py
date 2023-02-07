@@ -6,7 +6,5 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello, I Love Imooc"
+    return "Hello, I Love Flask"
 
-# flask run
-# flask run --host 0.0.0.0
