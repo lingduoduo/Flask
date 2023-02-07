@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 from werkzeug.wrappers import Request,Response
+
 class Shortly(object):
     def __call__(self, environ,start_response):
         #start_response( '200 OK',[ ( 'Content-Type','text/plain' ) ] )
         #return [ b'hello world~~' ]
         request = Request( environ )
-        text = "hello world, %s"%( request.args.get( 'a','i love mooc' ) )
+        text = "hello world, %s"%( request.args.get( 'a','i love Python' ) )
         response = Response(text,mimetype="text/plain"  )
         return response( environ,start_response )
 
