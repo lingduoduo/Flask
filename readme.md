@@ -8,6 +8,9 @@ export FLASK_APP=index_1.py
 flask run
 # flask run --host 0.0.0.0
 curl "http://127.0.0.1:5000"
+
+cd /Users/linghuang/Git/Flask/code_399/ppt4/4.4
+python index_1.py
 ```
 
 
