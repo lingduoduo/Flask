@@ -21,7 +21,6 @@ python index_1.py
 
 课程章节介绍
 ======
-* ![课程章节](http://cdn.pic1.54php.cn/20200222/4be8de18572764c0cec641b87d53371f.png?imageView/2/w/600)
 
 技术选型
 ====
