@@ -1,6 +1,7 @@
 Python Flask快速入门与进阶 ：http://movie.54php.cn/
 ===========================================
 
+- ppt4
 ```
 cd /Users/linghuang/Git/Flask/code_399/ppt4/4.3
 # 入口文件
@@ -12,6 +13,10 @@ curl "http://127.0.0.1:5000"
 cd /Users/linghuang/Git/Flask/code_399/ppt4/4.4
 python index_1.py
 # http://127.0.0.1:4999/?a=testing%20argument
+
+cd /Users/linghuang/Git/Flask/code_399/ppt4/4.5
+export ops_config=./config/base_setting.py
+python index_config_3.py
 ```
 
 
