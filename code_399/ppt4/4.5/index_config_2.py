@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 from flask import Flask
 
-app = Flask( __name__ )
-app.config.from_object( "config.base_setting" )
-@app.route( "/" )
+app = Flask(__name__)
+app.config.from_object("config.base_setting")
+
+
+@app.route("/")
 def hello():
-    return "Hello, I Love Imooc "
+    return "Hello, I Love Python "
+
 
 if __name__ == "__main__":
-    app.run( host = "0.0.0.0" )
-    #app.run()
+    app.run(host="0.0.0.0", port=4999)
+    # app.run()
