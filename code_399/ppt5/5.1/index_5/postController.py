@@ -18,3 +18,10 @@ def index():
 def info():
     return "post info"
 
+@post_page.route( "/set" )
+def set():
+    return "post set"
+
+@post_page.route( "/ops" )
+def ops():
+    return "post ops"
