@@ -47,6 +47,7 @@ python test_2.py
 系统演示截图
 ======
 * ![系统演示](/img/intro.png)
+* ![WebRequestResponse](/img/ppt5.png)
 
 技术选型
 ====
