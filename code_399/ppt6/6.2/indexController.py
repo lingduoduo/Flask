@@ -76,7 +76,9 @@ def template():
     name = "python"
     ##
     context = { "name" : name }
-    context['user'] = { "nickname":"Ling","home_page":"http://" }
+    context['user'] = { "nickname":"Ling",
+                        "email":"linghypshen@gmail.com",
+                        "linkedIn":"https://www.linkedin.com/in/ling-huang-87249924/"}
     context['num_list'] = [ 1,2,3,4,5]
     #return render_template( "index.html",name = name )
     return render_template( "index.html",**context )
