@@ -46,7 +46,7 @@ python test_2.py
 
 系统演示截图
 ======
-* ![系统演示](../img/intro.png)
+* ![系统演示](https://github.com/lingduoduo/Flask/tree/main/img)
 
 技术选型
 ====
