@@ -56,5 +56,34 @@ python application.py
 cd /Users/linghuang/Git/Flask/code_399/ppt5/5.1/index_6
 python test_1.py
 python test_2.py
+
+cd /Users/linghuang/Git/Flask/code_399/ppt5/5.3
+python application.py
+## http://192.168.1.153:4999/python/get
+## request:GET,params:ImmutableMultiDict([]),var_a:i love Python
+## (http://192.168.1.153:4999/python/get?a=b)
+## request:GET,params:ImmutableMultiDict([('a', 'b')]),var_a:b
+## request:GET,params:ImmutableMultiDict([('a', 'b'), ('c', 'd')]),var_a:b
+
+## http://192.168.1.153:4999/python/get
+## request:GET,params:ImmutableMultiDict([]),var_a:default value for get
+## http://192.168.1.153:4999/python/get?a=b
+## request:GET,params:ImmutableMultiDict([('a', 'b')]),var_a:b
+
+## http://192.168.1.153:4999/python/post
+## request:GET,params:ImmutableMultiDict([('a', 'b')]),var_a:b
+## http://192.168.1.153:4999/python/post
+## request:POST,params:ImmutableMultiDict([('a', 'b'), ('c', 'd')]),var_a:b
+
+## http://192.168.1.153:4999/python/upload
+##request:POST,params:ImmutableMultiDict([('file', <FileStorage: 'Screenshot 2023-02-09 at 10.56.53 AM.png'
+	('image/png')>)]),file: <FileStorage: 'Screenshot 2023-02-09 at 10.56.53 AM.png' ('image/png')>
+	
+curl "http://127.0.0.1:4999/python/get"
+curl "http://127.0.0.1:4999/python/get?a=b"
+curl "http://127.0.0.1:4999/python/post" -X POST -d "a=b"
+
+curl "http://127.0.0.1:4999/python/post" -X POST --form 'a="b"'
+curl --location --request POST 'http://192.168.1.153:4999/python/upload' --form 'file=@"/Users/linghuang/Desktop/Screenshot 2023-02-09 at 10.56.53 AM.png"'
 ```
 
