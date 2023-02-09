@@ -46,7 +46,7 @@ python test_2.py
 
 系统演示截图
 ======
-* ![系统演示](http://cdn.pic1.54php.cn/20200222/7fa222e6178c6f266d61aeb6932ac202.png?imageView/2/w/600)
+* ![系统演示](../img/intro.png)
 
 技术选型
 ====
