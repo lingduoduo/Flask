@@ -95,4 +95,10 @@ python application.py
 ## http://127.0.0.1:4999/python/text_same
 ## http://127.0.0.1:4999/python/json_same
 ## http://127.0.0.1:4999/python/template
+
+cd /Users/linghuang/Git/Flask/code_399/ppt6/6.2
+python application.py
+#http://192.168.1.153:4999/python/template
+#http://192.168.1.153:4999/python/extend_template
+# http://192.168.1.153:4999/python/extend_template_other
 ```
