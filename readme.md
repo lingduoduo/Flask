@@ -1,6 +1,21 @@
 Python Flask快速入门与进阶 ：http://movie.54php.cn/
 ===========================================
 
+系统演示截图
+======
+![系统演示](/img/intro.png)
+
+![WebRequestResponse](/img/ppt5.png)
+
+技术选型
+====
+* python3
+* Flask
+* MySQL
+* Bootstrap
+* jQuery
+
+
 - ppt4
 ```
 cd /Users/linghuang/Git/Flask/code_399/ppt4/4.3
@@ -42,19 +57,4 @@ cd /Users/linghuang/Git/Flask/code_399/ppt5/5.1/index_6
 python test_1.py
 python test_2.py
 ```
-
-
-系统演示截图
-======
-![系统演示](/img/intro.png)
-
-![WebRequestResponse](/img/ppt5.png)
-
-技术选型
-====
-* python3
-* Flask
-* MySQL
-* Bootstrap
-* jQuery
 
