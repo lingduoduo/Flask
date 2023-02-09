@@ -25,14 +25,21 @@ ps -ef | grep python
 kill -9 9556
 cd /Users/linghuang/Git/Flask/code_399/ppt5/5.1
 python index_1.py
+python index_2.py
+python index_3.py
+python index_4.py
 
-/Users/linghuang/Git/Flask/code_399/ppt5/5.1
+cd /Users/linghuang/Git/Flask/code_399/ppt5/5.1
+python index_1.py
+python index_2.py
+python index_3.py
 python index_4.py
 
 cd /Users/linghuang/Git/Flask/code_399/ppt5/5.1/index_5
 python application.py
 
 cd /Users/linghuang/Git/Flask/code_399/ppt5/5.1/index_6
+python test_1.py
 python test_2.py
 ```
 
