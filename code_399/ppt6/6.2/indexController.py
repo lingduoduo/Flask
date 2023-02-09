@@ -73,22 +73,22 @@ def json_same():
 @index_page.route("/template")
 def template():
     ##传值
-    name = "imooc"
+    name = "python"
     ##
     context = { "name" : name }
-    context['user'] = { "nickname":"编程浪子","qq":"xxxxx","home_page":"http://www.54php.cn" }
+    context['user'] = { "nickname":"Ling","home_page":"http://" }
     context['num_list'] = [ 1,2,3,4,5]
     #return render_template( "index.html",name = name )
     return render_template( "index.html",**context )
 
-
-@index_page.route("/extend_template")
-def extend_template():
-    return render_template( "extend_template.html" )
-
-
-@index_page.route("/extend_template_other")
-def extend_template_other():
-    return render_template( "extend_template_other.html" )
-
+#
+# @index_page.route("/extend_template")
+# def extend_template():
+#     return render_template( "extend_template.html" )
+#
+#
+# @index_page.route("/extend_template_other")
+# def extend_template_other():
+#     return render_template( "extend_template_other.html" )
+#
 

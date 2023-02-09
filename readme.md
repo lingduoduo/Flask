@@ -87,3 +87,12 @@ curl "http://127.0.0.1:4999/python/post" -X POST --form 'a="b"'
 curl --location --request POST 'http://192.168.1.153:4999/python/upload' --form 'file=@"/Users/linghuang/Desktop/Screenshot 2023-02-09 at 10.56.53 AM.png"'
 ```
 
+- ppt 6
+```
+cd /Users/linghuang/Git/Flask/code_399/ppt6/6.1
+python application.py
+## http://127.0.0.1:4999/python/text
+## http://127.0.0.1:4999/python/text_same
+## http://127.0.0.1:4999/python/json_same
+## http://127.0.0.1:4999/python/template
+```
