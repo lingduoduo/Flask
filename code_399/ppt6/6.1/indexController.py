@@ -18,15 +18,14 @@ def index_page_index():
 
 @index_page.route("/me")
 def hello():
-    return "hello ,I Love Imooc"
+    return "hello ,I Love Python"
 
 
 @index_page.route("/get")
 def get():
-    # var_a = request.args.get( "a","i love imooc" )
     ##变种
     req = request.values
-    var_a = req['a'] if "a" in req else "i love imooc"
+    var_a = req['a'] if "a" in req else "i love Python"
     return "request:%s,params:%s,var_a:%s" % (request.method, request.args, var_a)
 
 
@@ -40,7 +39,7 @@ def post():
     #     var_a = request.form['a']
     ##变种
     req = request.values
-    var_a = req['a'] if "a" in req else "i love imooc"
+    var_a = req['a'] if "a" in req else "i love Python"
     return "request:%s,params:%s,var_a:%s" % (request.method, request.form, var_a)
 
 
