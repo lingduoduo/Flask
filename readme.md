@@ -103,12 +103,22 @@ python application.py
 
 cd /Users/linghuang/Git/Flask/code_399/ppt6/6.2
 python application.py
-#http://192.168.1.153:4999/python/template
-#http://192.168.1.153:4999/python/extend_template
+# http://192.168.1.153:4999/python/template
+# http://192.168.1.153:4999/python/extend_template
 # http://192.168.1.153:4999/python/extend_template_other
 ```
 
 - ppt 7
 ```
+pip install flask_sqlalchemy
+brew install mysql
+pip install mysqlclient
+mysql -uroot -p
+pwd = 123456
+show databases;
+use mysql;
+select * from `user` -G;
 
+cd /Users/linghuang/Git/Flask/code_399/ppt7/7.1
+python manager.py
 ```
