@@ -7,7 +7,7 @@ Python Flask快速入门与进阶 ：http://movie.54php.cn/
 
 ![WebRequestResponse](/img/ppt5.png)
 
-![RestAPIStatusCode](api_status_code.png)
+![RestAPIStatusCode](/img/api_status_code.png)
 
 技术选型
 ====
