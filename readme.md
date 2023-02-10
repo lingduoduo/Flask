@@ -17,6 +17,8 @@ Python Flask快速入门与进阶 ：http://movie.54php.cn/
 * Bootstrap
 * jQuery
 
+http://www.pythondoc.com/flask-sqlalchemy/quickstart.html
+
 运行代码
 ====
 - ppt4
@@ -106,3 +108,7 @@ python application.py
 # http://192.168.1.153:4999/python/extend_template_other
 ```
 
+- ppt 7
+```
+
+```

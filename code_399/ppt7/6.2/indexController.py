@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, Blueprint, request, make_response, jsonify, render_template
-from sqlalchemy import text
-from application import db
 
 '''
 post/index 列表
@@ -20,29 +18,29 @@ def index_page_index():
 
 @index_page.route("/me")
 def hello():
-    return "hello ,I Love Python"
+    return "hello ,I Love Imooc"
 
 
 @index_page.route("/get")
 def get():
-    # var_a = request.args.get( "a","i love Python" )
+    # var_a = request.args.get( "a","i love imooc" )
     ##变种
     req = request.values
-    var_a = req['a'] if "a" in req else "i love Python"
+    var_a = req['a'] if "a" in req else "i love imooc"
     return "request:%s,params:%s,var_a:%s" % (request.method, request.args, var_a)
 
 
 @index_page.route("/post", methods=["POST"])
 def post():
     # 三元表达式
-    # var_a = request.form['a'] if "a" in request.form else 'i love Python'
+    # var_a = request.form['a'] if "a" in request.form else 'i love imooc'
     # 普通容易看懂的
     # var_a = ""
     # if "a" in request.form:
     #     var_a = request.form['a']
     ##变种
     req = request.values
-    var_a = req['a'] if "a" in req else "i love Python"
+    var_a = req['a'] if "a" in req else "i love imooc"
     return "request:%s,params:%s,var_a:%s" % (request.method, request.form, var_a)
 
 
@@ -52,8 +50,8 @@ def upload():
     return "request:%s,params:%s,file:%s" % (request.method, request.files, f)
 
 
-@index_page.route("/text_a")
-def text_a():
+@index_page.route("/text")
+def text():
     return "text/html"
 
 
@@ -82,17 +80,14 @@ def json_same():
 @index_page.route("/template")
 def template():
     ##传值
-    name = "Python"
+    name = "python"
     ##
     context = {"name": name}
-    context['user'] = {"nickname": "编程浪子", "qq": "xxxxx", "home_page": "http://www.54php.cn"}
+    context['user'] = {"nickname": "Ling",
+                       "email": "linghypshen@gmail.com",
+                       "linkedin": "https://www.linkedin.com/in/ling-huang-87249924/"}
     context['num_list'] = [1, 2, 3, 4, 5]
 
-    ##查询数据库
-    with db.engine.connect() as conn:
-        sql = text("select * from `user`")
-        result = conn.execute(sql)
-    context['result'] = result
     # return render_template( "index.html",name = name )
     return render_template("index.html", **context)
 
