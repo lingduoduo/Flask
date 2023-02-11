@@ -131,4 +131,7 @@ flask-sqlacodegen "mysql://root:123456@127.0.0.1/mysql" --tables user --outfile 
 flask-sqlacodegen "mysql://root:123456@127.0.0.1:3306/mysql" --tables user --outfile "common/models2/user.py" --flask
 mysql+pymysql://<username>:<password>@<database-ip>:<port>/<database-name> [--tables <tablenames>] [--notables]
 
+
+cd /Users/linghuang/Git/Flask/code_399/ppt7/7.3
+python manager.py
 ```
