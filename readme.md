@@ -21,7 +21,7 @@ http://www.pythondoc.com/flask-sqlalchemy/quickstart.html
 
 运行代码
 ====
-- ppt4
+- ppt4 Flask
 ```
 cd /Users/linghuang/Git/Flask/code_399/ppt4/4.3
 # 入口文件
@@ -39,7 +39,7 @@ export ops_config=./config/base_setting.py
 python index_config_3.py
 ```
 
-- ppt5
+- ppt5 HTTP requests
 ```
 ps -ef | grep python
 kill -9 9556
@@ -92,7 +92,7 @@ curl "http://127.0.0.1:4999/python/post" -X POST --form 'a="b"'
 curl --location --request POST 'http://192.168.1.153:4999/python/upload' --form 'file=@"/Users/linghuang/Desktop/Screenshot 2023-02-09 at 10.56.53 AM.png"'
 ```
 
-- ppt 6
+- ppt 6 Jinjia2
 ```
 cd /Users/linghuang/Git/Flask/code_399/ppt6/6.1
 python application.py
@@ -108,7 +108,7 @@ python application.py
 # http://192.168.1.153:4999/python/extend_template_other
 ```
 
-- ppt 7
+- ppt 7 SQLAlchemy
 ```
 pip install flask_sqlalchemy
 brew install mysql
@@ -134,4 +134,9 @@ mysql+pymysql://<username>:<password>@<database-ip>:<port>/<database-name> [--ta
 
 cd /Users/linghuang/Git/Flask/code_399/ppt7/7.3
 python manager.py
+```
+
+-- ppt 8 MVC
+```
+
 ```
