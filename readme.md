@@ -113,6 +113,7 @@ python application.py
 pip install flask_sqlalchemy
 brew install mysql
 pip install mysqlclient
+
 mysql -uroot -p
 pwd = 123456
 show databases;
@@ -124,4 +125,10 @@ python manager.py
 
 cd /Users/linghuang/Git/Flask/code_399/ppt7/7.2
 python manager.py
+
+pip install flask-sqlacodegen
+flask-sqlacodegen "mysql://root:123456@127.0.0.1/mysql" --tables user --outfile "common/models2/user.py" --flask
+flask-sqlacodegen "mysql://root:123456@127.0.0.1:3306/mysql" --tables user --outfile "common/models2/user.py" --flask
+mysql+pymysql://<username>:<password>@<database-ip>:<port>/<database-name> [--tables <tablenames>] [--notables]
+
 ```
