@@ -85,7 +85,9 @@ def template():
     name = "Python"
     ##
     context = {"name": name}
-    context['user'] = {"nickname": "编程浪子", "qq": "xxxxx", "home_page": "http://www.54php.cn"}
+    context['user'] = {"nickname": "Ling",
+                       "email": "linghypshen@gmail.com",
+                       "linkedin": "https://www.linkedin.com/in/ling-huang-87249924/"}
     context['num_list'] = [1, 2, 3, 4, 5]
 
     ##查询数据库

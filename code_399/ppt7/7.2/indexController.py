@@ -19,28 +19,28 @@ def index_page_index():
 
 @index_page.route( "/me" )
 def hello():
-    return "hello ,I Love Imooc"
+    return "hello ,I Love python"
 
 
 @index_page.route("/get")
 def get():
-    #var_a = request.args.get( "a","i love imooc" )
+    #var_a = request.args.get( "a","i love python" )
     ##变种
     req = request.values
-    var_a = req['a'] if "a" in req else "i love imooc"
+    var_a = req['a'] if "a" in req else "i love python"
     return "request:%s,params:%s,var_a:%s"%(request.method,request.args,var_a )
 
 @index_page.route("/post",methods = [ "POST" ])
 def post():
     #三元表达式
-    #var_a = request.form['a'] if "a" in request.form else 'i love imooc'
+    #var_a = request.form['a'] if "a" in request.form else 'i love python'
     #普通容易看懂的
     # var_a = ""
     # if "a" in request.form:
     #     var_a = request.form['a']
     ##变种
     req = request.values
-    var_a = req['a'] if "a" in req else "i love imooc"
+    var_a = req['a'] if "a" in req else "i love python"
     return "request:%s,params:%s,var_a:%s"%( request.method,request.form,var_a )
 
 @index_page.route("/upload",methods = [ "POST" ])
@@ -76,11 +76,13 @@ def json_same():
 @index_page.route("/template")
 def template():
     ##传值
-    name = "imooc"
+    name = "python"
     ##
-    context = { "name" : name }
-    context['user'] = { "nickname":"编程浪子","qq":"xxxxx","home_page":"http://www.54php.cn" }
-    context['num_list'] = [ 1,2,3,4,5]
+    context = {"name": name}
+    context['user'] = {"nickname": "Ling",
+                       "email": "linghypshen@gmail.com",
+                       "linkedin": "https://www.linkedin.com/in/ling-huang-87249924/"}
+    context['num_list'] = [1, 2, 3, 4, 5]
 
     ##查询数据库
     # sql = text( "select * from `user`")

@@ -6,7 +6,7 @@ index_page = Blueprint( "index_page",__name__ )
 @index_page.route("/")
 def index():
     ##传值
-    name = "imooc"
+    name = "Python"
     ##
     context = { "name" : name }
     context['user'] = { "nickname":"编程浪子","qq":"xxxxx","home_page":"http://www.54php.cn" }
