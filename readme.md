@@ -121,4 +121,7 @@ select * from `user` -G;
 
 cd /Users/linghuang/Git/Flask/code_399/ppt7/7.1
 python manager.py
+
+cd /Users/linghuang/Git/Flask/code_399/ppt7/7.2
+python manager.py
 ```

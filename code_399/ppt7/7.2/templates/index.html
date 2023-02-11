@@ -20,7 +20,8 @@ hello I Love Imooc
 <p> flask 查询数据库</p>
 <p>
     {% for item in result %}
-    {{ item['User'] }}
+    <p> {{ item['User'] }} </p>
+    <p> {{ item['Authentication_string'] }} </p>
     {% endfor %}
 </p>
 </body>
