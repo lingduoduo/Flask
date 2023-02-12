@@ -4,6 +4,7 @@ from application import app
 @app.before_request
 def before_request():
     app.logger.info( "--------before_request--------" )
+    # return "ok"
     return
 
 @app.after_request
