@@ -138,5 +138,16 @@ python manager.py
 
 -- ppt 8 MVC
 ```
+cd /Users/linghuang/Git/Flask/code_399/ppt8/8.2
+pip install flask-script
+python manager.py
+python manager.py runserver
+
+export ops_config=local
+python manager.py runserver
+
+pip install flask_debugtoolbar
+python manager.py runserver
+
 
 ```
