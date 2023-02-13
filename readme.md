@@ -148,6 +148,23 @@ python manager.py runserver
 
 pip install flask_debugtoolbar
 python manager.py runserver
+```
 
+-- ppt9
+```
+create database `movie_cat` default character set = `utf8mb4`;
+create table `user` (
+    id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT
+);
+alter table user
+    add login_pwd varchar(32) null,
+    add login_salt varchar(32) null,
+    add status tinyint(3) null,
+    add updated_time datetime null,
+    add created_time datetime null
+;
+alter table `user` add unique index `uk_login_name` (`login_name`); 
 
+cd /Users/linghuang/Git/Flask/code_399/ppt9/9.1
+export ops_config=local
 ```

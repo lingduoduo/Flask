@@ -16,5 +16,6 @@ if "ops_config" in os.environ:
 
 db = SQLAlchemy( app )
 
+app.logger.info("========================")
 
 
