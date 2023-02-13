@@ -4,5 +4,5 @@ from config.base_setting import *
 
 SQLALCHEMY_ECHO = False
 SQLALCHEMY_TRACK_MODIFICATIONS = False
-SQLALCHEMY_DATABASE_URI = "mysql://root:123456@127.0.0.1/mysql"
+SQLALCHEMY_DATABASE_URI = "mysql://root:123456@127.0.0.1/movie_cat"
 SECRET_KEY = "python123456"
