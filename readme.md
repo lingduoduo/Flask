@@ -167,4 +167,6 @@ alter table `user` add unique index `uk_login_name` (`login_name`);
 
 cd /Users/linghuang/Git/Flask/code_399/ppt9/9.1
 export ops_config=local
+python manager.py runserver
+# http://192.168.1.153:4999/python/template
 ```

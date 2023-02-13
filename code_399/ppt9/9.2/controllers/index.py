@@ -6,6 +6,8 @@ index_page = Blueprint( "index_page",__name__ )
 @index_page.route("/")
 def index():
     ##传值
+    name = "python"
+    ##
     context = {"name": name}
     context['user'] = {"nickname": "Ling",
                        "email": "linghypshen@gmail.com",

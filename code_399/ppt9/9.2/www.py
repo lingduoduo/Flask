@@ -16,5 +16,6 @@ from interceptors.errorHandler import *
 '''
 from controllers.index import index_page
 from controllers.member import member_page
+
 app.register_blueprint( index_page,url_prefix = "/" )
 app.register_blueprint( member_page,url_prefix = "/member" )
