@@ -20,17 +20,17 @@ def reg():
     login_pwd2 = req['login_pwd2'] if "login_pwd2" in req else ""
 
     if login_name is None or len( login_name ) < 1:
-        return ops_renderErrJSON( msg = "请输入正确的登录用户名~~" )
+        return ops_renderErrJSON( msg = "Please input authorized user name~~" )
 
     if login_pwd is None or len( login_pwd ) < 6:
-        return ops_renderErrJSON( msg ="请输入正确的登录密码，并且不能小于6个字符~~")
+        return ops_renderErrJSON( msg ="Please input password which is not less than 6 characters~")
 
     if login_pwd != login_pwd2:
-        return ops_renderErrJSON(msg="请输入正确的确认登录密码~~")
+        return ops_renderErrJSON(msg="Please confirmed your password~")
 
     user_info = User.query.filter_by( login_name = login_name ).first()
     if user_info:
-        return ops_renderErrJSON( msg ="登录用户名已被注册，请换一个~~")
+        return ops_renderErrJSON( msg ="Use name has been registered~~")
 
     model_user = User()
     model_user.login_name = login_name
@@ -40,7 +40,7 @@ def reg():
     model_user.created_time = model_user.updated_time = getCurrentTime()
     db.session.add( model_user )
     db.session.commit()
-    return ops_renderJSON( msg = "注册成功~~" )
+    return ops_renderJSON( msg = "Successful Registration~~" )
 
 
 @member_page.route("/login")

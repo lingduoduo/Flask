@@ -14,9 +14,7 @@ var member_reg_ops = {
             var login_name = $(".reg_wrap input[name=login_name]").val();
             var login_pwd = $(".reg_wrap input[name=login_pwd]").val();
             var login_pwd2 = $(".reg_wrap input[name=login_pwd2]").val();
-            alert(login_name)
-            alert(login_pwd)
-            alert(login_pwd2)
+
             if( login_name == undefined || login_name.length < 1 ){
                  common_ops.alert( "Please input the right user name~~" );
                 return ;
@@ -31,6 +29,7 @@ var member_reg_ops = {
                  common_ops.alert( "Please confirmed the right password~~" );
                 return ;
             }
+
             btn_target.addClass("disabled");
             $.ajax({
                 url: common_ops.buildUrl( "/member/reg" ),
