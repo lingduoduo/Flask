@@ -32,6 +32,8 @@ def reg():
     if user_info:
         return ops_renderErrJSON( msg ="Use name has been registered~~")
 
+    print(login_name)
+
     model_user = User()
     model_user.login_name = login_name
     model_user.nickname = nickname if nickname is not None else login_name
@@ -41,7 +43,6 @@ def reg():
     db.session.add( model_user )
     db.session.commit()
     return ops_renderJSON( msg = "Successful Registration~~" )
-
 
 @member_page.route("/login")
 def login():
