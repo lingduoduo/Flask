@@ -4,9 +4,11 @@ from config.base_setting import *
 SQLALCHEMY_ECHO = False
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_DATABASE_URI = "mysql://root:123456@127.0.0.1/movie_cat"
+
 SECRET_KEY = "python123456"
+
 DOMAIN = {
-    "www":"http://192.168.0.124"
+    "www":"http://127.0.0.1:4999"
 }
 
 
