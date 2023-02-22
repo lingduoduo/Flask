@@ -20,10 +20,10 @@ def reg():
     login_pwd2 = req['login_pwd2'] if "login_pwd2" in req else ""
 
     if login_name is None or len( login_name ) < 1:
-        return ops_renderErrJSON( msg = "Please input authorized user name~~" )
+        return ops_renderErrJSON(msg="Please input authorized user name~~" )
 
     if login_pwd is None or len( login_pwd ) < 6:
-        return ops_renderErrJSON( msg ="Please input password which is not less than 6 characters~")
+        return ops_renderErrJSON(msg="Please input password which is not less than 6 characters~")
 
     if login_pwd != login_pwd2:
         return ops_renderErrJSON(msg="Please confirmed your password~")
@@ -32,7 +32,6 @@ def reg():
     if user_info:
         return ops_renderErrJSON( msg ="Use name has been registered~~")
 
-    print(login_name)
 
     model_user = User()
     model_user.login_name = login_name
@@ -42,7 +41,8 @@ def reg():
     model_user.created_time = model_user.updated_time = getCurrentTime()
     db.session.add( model_user )
     db.session.commit()
-    return ops_renderJSON( msg = "Successful Registration~~" )
+    return ops_renderJSON( msg = "Registration Succeed~~" )
+
 
 @member_page.route("/login")
 def login():

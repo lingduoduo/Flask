@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
-from flask import Blueprint,render_template
+from flask import Blueprint, render_template
 from common.models.user import User
-index_page = Blueprint( "index_page",__name__ )
+
+index_page = Blueprint("index_page", __name__)
+
 
 @index_page.route("/")
 def index():
+    ##传值
     name = "python"
     ##
     context = {"name": name}
@@ -15,6 +18,4 @@ def index():
     result = User.query.all()
     context['result'] = result
 
-    return render_template( "index.html",**context )
-
-
+    return render_template("index.html", **context)
