@@ -1,0 +1,23 @@
+{% extends "common/layout.html" %}
+{% block content %}
+hello I Love Imooc
+<p>var name = {{ name }}</p>
+<p>
+    {% if user %}
+        {{ user.nickname }}
+        email:{{  user.email }}
+        linkedIn:{{ user.linkedin }}
+    {% endif %}
+</p>
+<p>
+    {% for tmp_num in num_list %}
+    {{ tmp_num }}
+    {% endfor %}
+</p>
+<p> flask Query Database</p>
+<p>
+    {% for item in result %}
+    {{ item['User'] }}
+    {% endfor %}
+</p>
+{% endblock %}
