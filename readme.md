@@ -190,3 +190,9 @@ export ops_config=local
 python manager.py runserver
 # http://192.168.1.153:4999/
 ```
+
+-- ppt10
+```
+cd /Users/linghuang/Git/Flask/code_399/ppt9/10.2
+python manager.py
+python manager.py runjob
