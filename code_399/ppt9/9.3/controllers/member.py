@@ -8,7 +8,7 @@ from common.libs.UserService import UserService
 
 member_page = Blueprint( "member_page",__name__ )
 
-@member_page.route("/reg",methods = [ "GET","POST" ])
+@member_page.route("/reg", methods = [ "GET","POST" ])
 def reg():
     if request.method == "GET":
         return render_template("member/reg.html")
@@ -30,7 +30,7 @@ def reg():
 
     user_info = User.query.filter_by( login_name = login_name ).first()
     if user_info:
-        return ops_renderErrJSON( msg ="Use name has been registered~~")
+        return ops_renderErrJSON( msg ="Use name has been registered, pls use another new user name ~~")
 
 
     model_user = User()
