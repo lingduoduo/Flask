@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, session
 from common.models.user import User
+from application import app
 
 index_page = Blueprint("index_page", __name__)
 
@@ -17,5 +18,7 @@ def index():
 
     result = User.query.all()
     context['result'] = result
+
+    # app.logger.info(session['uid'])
 
     return render_template("index.html", **context)
