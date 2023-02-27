@@ -6,9 +6,9 @@ def ops_render( template,context = {} ):
         context['current_user'] = g.current_user
     return render_template( template, **context )
 
-def ops_renderJSON( code = 200,msg = "操作成功~~",data = {} ):
+def ops_renderJSON( code = 200,msg = "Success~~",data = {} ):
     resp = { "code":code,"msg":msg,"data":data }
     return jsonify( resp )
 
-def ops_renderErrJSON( msg = "系统繁忙，请稍后再试~~",data = {} ):
+def ops_renderErrJSON( msg = "Please try again~~",data = {} ):
     return ops_renderJSON( code = -1,msg = msg,data = data )

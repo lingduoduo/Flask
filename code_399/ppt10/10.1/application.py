@@ -2,8 +2,9 @@
 from flask import Flask
 from flask_script import Manager
 from flask_sqlalchemy import SQLAlchemy
-from flask_apscheduler import APScheduler
 import os
+from flask_apscheduler import APScheduler
+
 app = Flask( __name__ )
 
 manager = Manager( app )
