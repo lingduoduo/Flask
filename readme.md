@@ -175,4 +175,18 @@ export ops_config=local
 python manager.py runserver
 # http://192.168.1.153:4999/
 
+cd /Users/linghuang/Git/Flask/code_399/ppt9/9.2
+export ops_config=local
+python manager.py runserver
+# http://192.168.1.153:4999/
+
+cd /Users/linghuang/Git/Flask/code_399/ppt9/9.3
+export ops_config=local
+python manager.py runserver
+# http://192.168.1.153:4999/
+
+cd /Users/linghuang/Git/Flask/code_399/ppt9/9.4
+export ops_config=local
+python manager.py runserver
+# http://192.168.1.153:4999/
 ```
