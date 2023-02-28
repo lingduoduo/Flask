@@ -196,3 +196,8 @@ python manager.py runserver
 cd /Users/linghuang/Git/Flask/code_399/ppt9/10.2
 python manager.py
 python manager.py runjob
+
+python manager.py runjob -m Test ( jobs/tasks/Test.py )
+python manager.py runjob -m test/index ( jobs/tasks/test/index.py )
+python manager.py runjob -m test -a list -p 1 2 3 4
+```

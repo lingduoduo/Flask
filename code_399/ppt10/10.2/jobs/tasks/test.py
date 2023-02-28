@@ -5,5 +5,5 @@ class JobTask():
         pass
 
     def run(self,params):
-        print( "Job测试打印" )
+        print( "Job Test Print" )
         print( params )
