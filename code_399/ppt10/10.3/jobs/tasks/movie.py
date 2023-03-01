@@ -4,7 +4,7 @@ import requests, os, time, hashlib, json, re
 from bs4 import BeautifulSoup
 from common.libs.DataHelper import getCurrentTime
 from urllib.parse import urlparse
-# from common.models.movie import Movie
+from common.models.movie import Movie
 import logging
 from flask.logging import default_handler
 
@@ -34,9 +34,9 @@ class JobTask():
         self.date = getCurrentTime(frm="%Y%m%d")
         if act == "list":
             self.getList()
-        #     self.parseInfo()
-        # elif act == "parse":
-        #     self.parseInfo()
+            self.parseInfo()
+        elif act == "parse":
+            self.parseInfo()
 
     '''
     获取列表
@@ -147,10 +147,8 @@ class JobTask():
                 ##页面没有日期我们就去当天吧
                 tmp_pub_date = self.date
                 tmp_desc = tmp_soup.select("div.txtIntroCon div.wholeTxt ul.newIntro li.extend .pHide")[0].getText()
-                tmp_classify = tmp_soup.select("div.txtIntroCon div.wholeTxt ul.txtList li.li_3 div.emTit-l")[
-                    2].getText()
-                tmp_actor = tmp_soup.select("div.txtIntroCon div.wholeTxt ul.txtList li.liActor div.emTit-l")[
-                    1].getText()
+                tmp_classify = tmp_soup.select("div.txtIntroCon div.wholeTxt ul.txtList li.li_3 div.emTit-l")[2].getText()
+                tmp_actor = tmp_soup.select("div.txtIntroCon div.wholeTxt ul.txtList li.liActor div.emTit-l")[1].getText()
                 tmp_pic_list = tmp_soup.select("div.posterPlaceholder div.pic img ")
                 tmp_pics = [tmp_data['cover_url']]
                 for tmp_pic in tmp_pic_list:
