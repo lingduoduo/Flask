@@ -5,12 +5,13 @@ from config.base_setting import *
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 SQLALCHEMY_DATABASE_URI = "mysql://root:123456@127.0.0.1/movie_cat"
 
-SECRET_KEY = "imooc123456"
+SECRET_KEY = "python123456"
 
 
 DOMAIN = {
-    "www":"http://192.168.0.124:5000"
+    "www": "http://127.0.0.1:4999"
 }
 
 
 #RELEASE_PATH = "/home/www/release_version"
+
