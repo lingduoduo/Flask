@@ -65,32 +65,32 @@ class JobTask():
 
             tmp_content = self.getHttpContent(tmp_url)
             self.saveContent(tmp_path, tmp_content)
-        #     time.sleep(0.3)
-        #
-        # for idx in os.listdir(path_list):
-        #     tmp_content = self.getContent(path_list + "/" + str(idx))
-        #     items_data = self.parseList(tmp_content)
-        #     if not items_data:
-        #         continue
-        #
-        #     for item in items_data:
-        #         app.logger.info("----------------")
-        #         app.logger.info(item)
-        #         tmp_json_path = path_json + "/" + item['hash']
-        #         tmp_info_path = path_info + "/" + item['hash']
-        #         tmp_vid_path = path_vid + "/" + item['hash']
-        #         if not os.path.exists(tmp_json_path):
-        #             self.saveContent(tmp_json_path, json.dumps(item, ensure_ascii=False))
-        #
-        #         if not os.path.exists(tmp_info_path):
-        #             tmp_content = self.getHttpContent(item['url'])
-        #             self.saveContent(tmp_info_path, tmp_content)
-        #
-        #         if not os.path.exists(tmp_vid_path):
-        #             tmp_content = self.getHttpContent(item['vid_url'])
-        #             self.saveContent(tmp_vid_path, tmp_content)
-        #
-        #         time.sleep(0.3)
+            time.sleep(0.3)
+
+        for idx in os.listdir(path_list):
+            tmp_content = self.getContent(path_list + "/" + str(idx))
+            items_data = self.parseList(tmp_content)
+            if not items_data:
+                continue
+
+            for item in items_data:
+                app.logger.info("----------------")
+                app.logger.info(item)
+                tmp_json_path = path_json + "/" + item['hash']
+                tmp_info_path = path_info + "/" + item['hash']
+                tmp_vid_path = path_vid + "/" + item['hash']
+                if not os.path.exists(tmp_json_path):
+                    self.saveContent(tmp_json_path, json.dumps(item, ensure_ascii=False))
+
+                if not os.path.exists(tmp_info_path):
+                    tmp_content = self.getHttpContent(item['url'])
+                    self.saveContent(tmp_info_path, tmp_content)
+
+                if not os.path.exists(tmp_vid_path):
+                    tmp_content = self.getHttpContent(item['vid_url'])
+                    self.saveContent(tmp_vid_path, tmp_content)
+
+                time.sleep(0.3)
 
     def parseList(self, content):
         data = []
