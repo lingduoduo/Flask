@@ -193,7 +193,7 @@ python manager.py runserver
 
 -- ppt10
 ```
-cd /Users/linghuang/Git/Flask/code_399/ppt9/10.2
+cd /Users/linghuang/Git/Flask/code_399/ppt10/10.2
 python manager.py
 python manager.py runjob
 
@@ -201,7 +201,9 @@ python manager.py runjob -m Test ( jobs/tasks/Test.py )
 python manager.py runjob -m test/index ( jobs/tasks/test/index.py )
 python manager.py runjob -m test -a list -p 1 2 3 4
 
-cd /Users/linghuang/Git/Flask/code_399/ppt9/10.3
+cd /Users/linghuang/Git/Flask/code_399/ppt10/10.3
 python manager.py runjob -m movie -a list
 select * from movie;
+crontab -l
+30 3 * * *  { export ops_config=local && /Users/linghuang/Git/Flask/code_399/ppt10/10.3/manager.py runjob -m movie -a list ; }
 ```
