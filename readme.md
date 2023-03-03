@@ -145,7 +145,7 @@ pip install flask_debugtoolbar
 python manager.py runserver
 ```
 
--- ppt9
+-- ppt9 Registration and Login
 ```
 create database `movie_cat` default character set = `utf8mb4`;
 create table `user` (
@@ -186,7 +186,7 @@ python manager.py runserver
 # http://192.168.1.153:4999/
 ```
 
--- ppt10
+-- ppt10 Launch Jobs
 ```
 cd /Users/linghuang/Git/Flask/code_399/ppt10/10.2
 python manager.py
@@ -201,5 +201,11 @@ python manager.py runjob -m movie -a list
 select * from movie;
 crontab -l
 30 3 * * *  { export ops_config=local && /Users/linghuang/Git/Flask/code_399/ppt10/10.3/manager.py runjob -m movie -a list ; }
+```
+
+-- ppt11 Layout and Pagination
+```
+cd /Users/linghuang/Git/Flask/code_399/ppt11/11.1
+python manager.py runserver
 ```
 
