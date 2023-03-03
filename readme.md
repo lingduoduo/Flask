@@ -207,3 +207,4 @@ select * from movie;
 crontab -l
 30 3 * * *  { export ops_config=local && /Users/linghuang/Git/Flask/code_399/ppt10/10.3/manager.py runjob -m movie -a list ; }
 ```
+
