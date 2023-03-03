@@ -1,6 +1,3 @@
-Python Flask快速入门与进阶 ：http://movie.54php.cn/
-===========================================
-
 系统演示截图
 ======
 ![系统演示](/img/intro.png)
@@ -16,8 +13,6 @@ Python Flask快速入门与进阶 ：http://movie.54php.cn/
 * MySQL
 * Bootstrap
 * jQuery
-
-http://www.pythondoc.com/flask-sqlalchemy/quickstart.html
 
 运行代码
 ====
