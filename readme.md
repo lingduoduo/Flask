@@ -209,7 +209,7 @@ cd /Users/linghuang/Git/Flask/code_399/ppt11/11.1
 python manager.py runserver
 ```
 
--- ppt12  CentOS + uwsgi
+-- ppt12  uwsgi + nginx
 ```
 python -m site
 
