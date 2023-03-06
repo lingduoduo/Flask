@@ -2,7 +2,7 @@
 {% block content %}
 <div class="row">
     <div class="page-header">
-        <h1>{{ info.name | safe }} <a class="pull-right" href="{{buildUrl('/')}}">返回列表</a></h1>
+        <h1>{{ info.name | safe }} <a class="pull-right" href="{{buildUrl('/')}}">Homepage</a></h1>
     </div>
     <div class="row">
         <div class="col-lg-4">
@@ -11,17 +11,17 @@
         <div class="col-lg-8">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <p>更新：{{ info.pub_date | safe }}</p>
-                    <p>类型：{{ info.classify | safe }}</p>
-                    <p>主演：{{ info.actor | safe }}</p>
+                    <p>Published date：{{ info.pub_date | safe }}</p>
+                    <p>Classify：{{ info.classify | safe }}</p>
+                    <p>Actor：{{ info.actor | safe }}</p>
                     <p>{{ info.desc | safe }}</p>
-                    <p>下载地址：{{ info.magnet_url | safe }}</p>
-                    <p>原地址：<a target="_blank" href="{{ info.url | safe }}">{{ info.url | safe }}</a></p>
+                    <p>Magnet URL：{{ info.magnet_url | safe }}</p>
+                    <p>URL：<a target="_blank" href="{{ info.url | safe }}">{{ info.url | safe }}</a></p>
                 </div>
 
                 <!-- List group -->
                 <ul class="list-group">
-                    <li class="list-group-item">随机推荐</li>
+                    <li class="list-group-item">Random Recommendation</li>
                     <li class="list-group-item">
                         <div class="row">
                             {% for item in recommend_list %}

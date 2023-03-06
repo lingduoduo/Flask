@@ -209,3 +209,28 @@ cd /Users/linghuang/Git/Flask/code_399/ppt11/11.1
 python manager.py runserver
 ```
 
+-- ppt12  CentOS + uwsgi
+```
+python -m site
+
+for virtual env
+python3 -c 'import sysconfig; print(sysconfig.get_paths()["purelib"])'
+l /Users/linghuang/.pyenv/versions/3.10.5/bin/uwsgi
+sudo ln -s /Users/linghuang/.pyenv/versions/3.10.5/bin/uwsgi /usr/local/bin/uwsgi
+
+https://www.runoob.com/python3/python-uwsgi.html
+uwsgi --socket 127.0.0.1:3031 --wsgi-file myflaskapp.py --callable app --processes 4 --threads 2 --stats 127.0.0.1:9191
+uwsgi --http-socket :4999 --wsgi-file manager.py --callable app 
+uwsgi --http-socket :4999 --wsgi-file manager.py --callable app --processes 4
+uwsgi uwsgi.ini
+ps -ef | grep uwsgi
+
+brew install nginx
+sudo nginx
+cd /usr/local/etc/nginx/
+ln -s /usr/local/etc/nginx/conf.d/default.conf default.conf
+sudo nginx -s reload
+http://127.0.0.1:8000
+uwsgi --reload /Users/linghuang/Git/Flask/code_399/tmp/logs/movie.pid
+```
+

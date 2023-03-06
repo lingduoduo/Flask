@@ -7,18 +7,18 @@ var member_login_ops = {
         $(".login_wrap .do-login").click(function () {
             var btn_target = $(this);
             if (btn_target.hasClass("disabled")) {
-                common_ops.alert("正在处理！！请不要重复点击~~");
+                common_ops.alert("Don't click again!!~~");
                 return;
             }
             var login_name = $(".login_wrap input[name=login_name]").val();
             var login_pwd = $(".login_wrap input[name=login_pwd]").val();
             if( login_name == undefined || login_name.length < 1 ){
-                common_ops.alert("请输入正确的登录用户名~~");
+                common_ops.alert( "Please input the right user name~~");
                 return;
             }
 
             if( login_pwd == undefined || login_pwd.length < 6 ){
-                common_ops.alert("请输入正确的登录密码~~");
+                common_ops.alert("Please input the right password~~" );
                 return;
             }
 

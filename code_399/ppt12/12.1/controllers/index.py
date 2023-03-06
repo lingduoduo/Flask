@@ -31,7 +31,7 @@ def index():
     offset = ( page - 1 ) * page_params['page_size']
     limit = page * page_params['page_size']
 
-    if order_by_f == "hot":
+    if order_by_f == "trending":
         query = query.order_by( Movie.view_counter.desc(),Movie.id.desc() )
     else:
         query = query.order_by( Movie.pub_date.desc(),Movie.id.desc() )
