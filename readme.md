@@ -1,4 +1,4 @@
-技术选型
+Architecture
 ====
 * python3
 * Flask
@@ -6,7 +6,7 @@
 * Bootstrap
 * jQuery
 
-运行代码
+Running Code
 ====
 - ppt4 Flask
 ```
