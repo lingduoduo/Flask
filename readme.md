@@ -1,11 +1,3 @@
-系统演示截图
-======
-![系统演示](/img/intro.png)
-
-![WebRequestResponse](/img/ppt5.png)
-
-![RestAPIStatusCode](/img/api_status_code.png)
-
 技术选型
 ====
 * python3
