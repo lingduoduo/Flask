@@ -8,10 +8,9 @@ Architecture
 
 Running Code
 ====
-- ppt4 Flask
+### Flask
 ```
 cd /Users/linghuang/Git/Flask/code_399/ppt4/4.3
-# 入口文件
 export FLASK_APP=index_1.py 
 flask run
 # flask run --host 0.0.0.0
@@ -26,7 +25,7 @@ export ops_config=./config/base_setting.py
 python index_config_3.py
 ```
 
-- ppt5 HTTP requests
+### HTTP requests
 ```
 ps -ef | grep python
 kill -9 9556
@@ -79,7 +78,7 @@ curl "http://127.0.0.1:4999/python/post" -X POST --form 'a="b"'
 curl --location --request POST 'http://192.168.1.153:4999/python/upload' --form 'file=@"/Users/linghuang/Desktop/Screenshot 2023-02-09 at 10.56.53 AM.png"'
 ```
 
-- ppt 6 Jinjia2
+### Jinjia2
 ```
 cd /Users/linghuang/Git/Flask/code_399/ppt6/6.1
 python application.py
@@ -95,7 +94,7 @@ python application.py
 # http://192.168.1.153:4999/python/extend_template_other
 ```
 
-- ppt 7 SQLAlchemy
+### SQLAlchemy
 ```
 pip install flask_sqlalchemy
 brew install mysql
@@ -123,7 +122,7 @@ cd /Users/linghuang/Git/Flask/code_399/ppt7/7.3
 python manager.py
 ```
 
--- ppt 8 MVC
+### MVC
 ```
 cd /Users/linghuang/Git/Flask/code_399/ppt8/8.2
 pip install flask-script
@@ -137,7 +136,7 @@ pip install flask_debugtoolbar
 python manager.py runserver
 ```
 
--- ppt9 Registration and Login
+### Registration and Login
 ```
 create database `movie_cat` default character set = `utf8mb4`;
 create table `user` (
@@ -178,7 +177,7 @@ python manager.py runserver
 # http://192.168.1.153:4999/
 ```
 
--- ppt10 Launch Jobs
+### Launch Jobs
 ```
 cd /Users/linghuang/Git/Flask/code_399/ppt10/10.2
 python manager.py
@@ -201,7 +200,7 @@ cd /Users/linghuang/Git/Flask/code_399/ppt11/11.1
 python manager.py runserver
 ```
 
--- ppt12  uwsgi + nginx
+### uwsgi + nginx
 ```
 python -m site
 
@@ -225,4 +224,3 @@ sudo nginx -s reload
 http://127.0.0.1:8000
 uwsgi --reload /Users/linghuang/Git/Flask/code_399/tmp/logs/movie.pid
 ```
-
