@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 if __name__ == "__main__":
-    tuple = ( "abcd",786,2.23,"imooc",70.2 )
-    tinytuple = ( 123,"imooc" )
+    tuple = ( "abcd",786,2.23,"happy",70.2 )
+    tinytuple = ( 123,"happy" )
     print( tuple )
     print( tuple[0] )
     print( tuple[1:3] )

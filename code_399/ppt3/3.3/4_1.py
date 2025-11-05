@@ -16,6 +16,6 @@ class Student(object):
         self.__score = score
 
 
-s = Student("imooc", "100")
+s = Student("happy", "100")
 s.score = 80
 print(s.score)

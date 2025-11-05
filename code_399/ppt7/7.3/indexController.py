@@ -76,7 +76,7 @@ def json_same():
 @index_page.route("/template")
 def template():
     ##传值
-    name = "imooc"
+    name = "happy"
     ##
     context = { "name" : name }
     context['user'] = { "nickname":"编程浪子","qq":"xxxxx","home_page":"http://www.54php.cn" }

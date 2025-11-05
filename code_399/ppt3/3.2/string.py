@@ -10,4 +10,4 @@ if __name__ == "__main__":
     print( str[2:] )
     print( str * 2 )
     print( str + "TEST" )
-    print( str + "imooc" )
+    print( str + "happy" )

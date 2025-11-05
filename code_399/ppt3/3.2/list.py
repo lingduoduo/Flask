@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 if __name__ == "__main__":
-    list = [ "abcd",786,2.23,"imooc",70.2 ]
-    tinylist = [ 123,"imooc"]
+    list = [ "abcd", 786, 2.23, "Ling", 70.2 ]
+    tinylist = [ 123, "Ling"]
     print( list )
     print( list[0] )
     print( list[1:3] )

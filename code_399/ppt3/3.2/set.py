@@ -3,9 +3,9 @@ if __name__ == "__main__":
     student = { "Tom","Jim","Mary","Tom","Jack","Rose" }
     print( student )
     if "Rose" in student:
-        print( "Rose在集合中" )
+        print( "Rose is in the set." )
     else:
-        print("Rose不在集合中")
+        print("Rose is not in the set.")
 
     a = set( "abrasdfasdfs" )
     b = set( "sdafwerdfd" )

@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 if __name__ == "__main__":
     dict = {}
-    dict["one"] = "1 - 慕课网-程序员的梦工厂"
-    dict[2] = "2 - 慕课网-程序员的梦工厂"
+    dict["one"] = "1 - google.com"
+    dict[2] = "2 - gmail.com"
 
-    tinydict = { "name":"imooc","code":1 ,"site":"www.imooc.com" }
+    tinydict = { "name":"gmail", "code":1 , "site":"www.google.com" }
     print( dict )
     print( dict[ "one" ] )
     print( dict[ 2 ] )
